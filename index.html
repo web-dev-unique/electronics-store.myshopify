@@ -15,6 +15,8 @@
 
 <body onload="move()">
 
+
+    <!-- ================= PAGE LOADER ANIMATION START ================== -->
     <div id="preload">
         <div class="load-dost">
             <div class="box" id="box1"></div>
@@ -22,6 +24,8 @@
             <div class="box" id="box3"></div>
         </div>
     </div>
+
+    <!-- ================= PAGE LOADER ANIMATION END ================== -->
 
 
 
@@ -40,7 +44,23 @@
                 </div>
                 <div class="login">
                     <ul>
-                        <li class="currency "><span>USD</span> <i class="fa-solid fa-angle-down"></i></li>
+                        <li class="currency-sect-button currency"><span id="currency-change">USD</span> <i
+                                class="fa-solid fa-angle-down"></i>
+
+                            <div class="currency-drop">
+                                <ul class="currency-list">
+                                    <li onclick="showDetails(this)" data-currency-type="USD">USD - US Dollar</li>
+                                    <li onclick="showDetails(this)" data-currency-type="EUR">EUR - Euro</li>
+                                    <li onclick="showDetails(this)" data-currency-type="GBP">GBP - British Pound</li>
+                                    <li onclick="showDetails(this)" data-currency-type="INR">INR - Indian Rupee</li>
+                                    <li onclick="showDetails(this)" data-currency-type="BDT">BDT - Bangladesh Taka</li>
+                                    <li onclick="showDetails(this)" data-currency-type="JPY">JPY - Japan Yen</li>
+                                    <li onclick="showDetails(this)" data-currency-type="CAD">CAD - Canada Dollar</li>
+                                    <li onclick="showDetails(this)" data-currency-type="AUD">AUD - Australian Dollar
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <span class="header-1-line-vartical"></span>
                         <li class="login"> <a href="">Log In</a></li>
                         <div class="log-line">/</div>
@@ -158,6 +178,11 @@
     </section>
 
 
+    <!-- /* ================= section4 =============== */ -->
+    <!-- /* ================= section4 =============== */ -->
+    <!-- /* ================= section4 =============== */ -->
+
+
 
     <section class="trending-section">
         <div class="container">
@@ -262,35 +287,8 @@
 
 
 
-    <section class="section-template">
-        <div class="container">
-            <div class="unorder-list">
-                <div class="smart-cam">
-                    <span>SECURITY SMART CAMERA</span>
-                    <h2>Just Starting At $850</h2>
-                    <button>
-                        <a href="">Shop Now</a>
-                    </button>
 
-                    <div class="banner-1">
-                        <img src="img/sub-banner-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="smart-cam">
-                    <span>ENTERTAINMENT & GAMES</span>
-                    <h2>Just Starting at $850 Hurry up!</h2>
-                    <button>
-                        <a href="">Shop Now</a>
-                    </button>
 
-                    <div class="banner-1">
-                        <img src="img/sub-banner-2.jpg" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
 
 

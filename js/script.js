@@ -1,6 +1,15 @@
 
 
 
+//  ========= loader page start ===============
+//  ========= loader page start ===============
+//  ========= loader page start ===============
+
+
+function move() {
+    document.getElementById("preload").style.display = "none";
+}
+
 
 gsap.to(".box", {
     opacity: 1,
@@ -11,15 +20,20 @@ gsap.to(".box", {
     scale: .0,
 })
 
-function move() {
-    document.getElementById("preload").style.display = "none";
-}
+
+//  ========= loader page end ===============
+//  ========= loader page end ===============
+//  ========= loader page end ===============
 
 
 
+function showDetails(currency) {
+    let currencyType = currency.getAttribute("data-currency-type");
+    document.getElementById("currency-change").innerHTML = ( currencyType) ;
+  }
 
-
-
+  
+  
 
 
 var landing = gsap.timeline();
@@ -59,6 +73,9 @@ landing.from(".button", {
 
   
 })
+
+
+
 
 
 
