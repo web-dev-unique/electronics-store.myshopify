@@ -72,8 +72,6 @@ landing.from(".button", {
     y: 40,
     duration: 0.5,
     opacity: 0,
-
-  
 })
 
 
@@ -116,9 +114,10 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".productSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
+    loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -134,7 +133,7 @@ var swiper = new Swiper(".mySwiper", {
       },
       1024: {
         slidesPerView: 5,
-        spaceBetween: 50,
+        spaceBetween: 30,
       },
     },
   });
