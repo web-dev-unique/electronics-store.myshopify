@@ -1,0 +1,148 @@
+
+  /* --------------------SECTION 2--------------------------- */
+  /* --------------------SECTION 2--------------------------- */
+  /* --------------------SECTION 2--------------------------- */
+
+  .login-main{
+    background-color: #f4f4f4;
+    padding: 50px;
+  }
+
+  .login-para{
+    display: flex;
+  }
+
+  .login-para a{
+    text-decoration: none;
+    color: #666;
+    padding-right: 10px;
+  }
+
+ 
+  .login-para p{
+    color: #e52e06;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+
+  /* ----------------------- SECTION 3-------------------------- */
+  /* ----------------------- SECTION 3-------------------------- */
+  /* ----------------------- SECTION 3-------------------------- */
+
+  .signup-main{
+    padding-top: 85px;
+    padding-bottom: 80px;
+  }
+  .signup-form{
+    text-align: center;
+    padding-top: 50px;
+    box-shadow: 2px 2px 11px #0000001a; 
+    width: 75%;
+    margin: 0 auto; 
+    padding-left: 40px;
+  }
+  
+  .signup-content h2{
+    color: #333;
+    font-size: 25px;
+    padding-bottom: 12px;
+  }
+
+   .signup-content p{
+    color: #666;
+    font-size: 15px;
+    padding-bottom: 20px;
+    
+  }
+
+  .signup-content span{
+    color: #666;
+    font-size: 15px;
+    padding-bottom: 20px;
+    display: block;
+    
+  }
+
+  .signup-content a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: all .5s;
+  }
+
+  .signup-content a:hover{
+    text-decoration: none;
+    color: #f60000;
+    font-size: 18px;
+  }
+  
+  .actual {
+    width: 79%;
+    margin: 0 auto;
+  }
+
+ .actual-create{
+    display: flex;
+ }
+  .actual-create{
+    padding-left: 20px;
+  }
+  .actual-create label{
+    color: #333;
+    padding: 10px 0px;
+    width: 130px;
+    text-align: left;
+  }
+
+ 
+  .actual-create input{
+    color: #333;
+    border: 1px solid #ebebeb;
+    background-color:#ebebeb;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 35px;
+    margin-left: 80px;
+  }
+
+  .signup-button{
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  .signup-button a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+    border-radius: 30px;
+    background-color: #e52e06;
+    padding: 15px 30px;
+  }
+
+  .restore-button{
+    padding-bottom: 100px;
+  }
+
+  .restore-button a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all .5s;
+  }
+  .restore-button a:hover{
+    color: #e52e06;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .section-footer {
+    background-color: #f8f8f8 !important;
+  }

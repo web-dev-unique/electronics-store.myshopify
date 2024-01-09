@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onload="move()">
+<body onload="move()" >
 
 
     <!-- ================= PAGE LOADER ANIMATION START ================== -->
@@ -49,22 +49,28 @@
 
                             <div class="currency-drop">
                                 <ul class="currency-list">
-                                    <li onclick="showDetails(this)" data-currency-type="USD">USD - US Dollar</li>
-                                    <li onclick="showDetails(this)" data-currency-type="EUR">EUR - Euro</li>
-                                    <li onclick="showDetails(this)" data-currency-type="GBP">GBP - British Pound</li>
-                                    <li onclick="showDetails(this)" data-currency-type="INR">INR - Indian Rupee</li>
-                                    <li onclick="showDetails(this)" data-currency-type="BDT">BDT - Bangladesh Taka</li>
-                                    <li onclick="showDetails(this)" data-currency-type="JPY">JPY - Japan Yen</li>
-                                    <li onclick="showDetails(this)" data-currency-type="CAD">CAD - Canada Dollar</li>
-                                    <li onclick="showDetails(this)" data-currency-type="AUD">AUD - Australian Dollar
+                                    <li onclick="showDetails(this)" class="USD" data-currency-type="USD">USD - US Dollar
                                     </li>
+                                    <li onclick="showDetails(this)" class="EUR" data-currency-type="EUR">EUR - Euro</li>
+                                    <li onclick="showDetails(this)" class="GBP" data-currency-type="GBP">GBP - British
+                                        Pound</li>
+                                    <li onclick="showDetails(this)" class="INR" data-currency-type="INR">INR - Indian
+                                        Rupee</li>
+                                    <li onclick="showDetails(this)" class="BDT" data-currency-type="BDT">BDT -
+                                        Bangladesh Taka</li>
+                                    <li onclick="showDetails(this)" class="JPY" data-currency-type="JPY">JPY - Japan Yen
+                                    </li>
+                                    <li onclick="showDetails(this)" class="CAD" data-currency-type="CAD">CAD - Canada
+                                        Dollar</li>
+                                    <li onclick="showDetails(this)" class="AUD" data-currency-type="AUD">AUD -
+                                        Australian Dollar</li>
                                 </ul>
                             </div>
                         </li>
                         <span class="header-1-line-vartical"></span>
-                        <li class="login"> <a href="">Log In</a></li>
+                        <li class="login"> <a href="./log.html">Log In</a></li>
                         <div class="log-line">/</div>
-                        <li class="sign"><a href="">Sign Up</a></li>
+                        <li class="sign"><a href="./signup.html">Sign Up</a></li>
                     </ul>
                 </div>
             </div>
@@ -150,7 +156,23 @@
                 <div class="button-icons">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-bag-shopping"><span>0</span></i>
+                    <i class="fa-solid fa-bag-shopping"><span class="count-list" id="count-count-total">0</span>
+                    
+                        <div class="add-to-cart">
+                            <div class="add-top-cart-products">
+                                <ol id="products-list"></ol>
+                            </div>
+                            <div class="total-count">
+                                <h5 >Total : <span id="total-products-count">0</span></h5>
+                            </div>
+                            <div class="add-to-cart-buttons">
+
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    </i>
                 </div>
             </div>
         </div>
@@ -193,7 +215,7 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide trending-img-silider">
                             <div class="trending-img">
                                 <a class="trending-hover" href="">
                                     <img class="hover-eff" src="./img/11_300x300.jpg" alt="">
@@ -204,7 +226,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide trending-img-silider">
                             <div class="trending-img">
                                 <a class="trending-hover" href="">
                                     <img class="hover-eff" src="./img/9_300x300.jpg" alt="">
@@ -215,7 +237,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide trending-img-silider">
                             <div class="trending-img">
                                 <a class="trending-hover" href="">
                                     <img class="hover-eff" src="./img/12_300x300.jpg" alt="">
@@ -226,7 +248,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide trending-img-silider">
                             <div class="trending-img">
                                 <a class="trending-hover" href="">
                                     <img class="hover-eff" src="./img/10_300x300.jpg" alt="">
@@ -236,7 +258,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide trending-img-silider">
                             <div class="trending-img">
                                 <a class="trending-hover" href="">
                                     <img class="hover-eff" src="./img/p4_300x300.jpg" alt="">
@@ -247,7 +269,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide trending-img-silider">
                             <div class="trending-img">
                                 <a class="trending-hover" href="">
                                     <img class="hover-eff" src="./img/13_300x300.jpg" alt="">
@@ -258,7 +280,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide trending-img-silider">
                             <div class="trending-img">
                                 <a class="trending-hover" href="">
                                     <img class="hover-eff" src="./img/p7_300x300.jpg" alt="">
@@ -268,12 +290,8 @@
                                 </a>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
-
             </div>
 
             <div class="box-swiper-content">
@@ -302,8 +320,7 @@
                     </div>
                 </div>
             </div>
-
-
+        </div>
     </section>
 
 
@@ -311,449 +328,843 @@
     <!-- /* ================= section4 =============== */ -->
     <!-- /* ================= section4 =============== */ -->
     <!-- /* ================= section4 =============== */ -->
+
+
 
 
 
 
     <section>
-        <div class="container">
-
-            <div class="sect-5-heading">
-                <h2></h2>
-            </div>
-            <div class="sect-5-swiper">
-                <!-- Swiper -->
-                <div class="swiper  ">
-                    <div class="swiper-wrapper  ">
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-1" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-2" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="swiper-slide">
-                            <div class="sect-5-swiper-img">
-                                <div class="img-sect-5">
-                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
-                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
-                                </div>
-
-                                <div class="sect-5-content">
-                                    <div class="sect-5-icons">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                        <i class="fa-solid fa-signal"></i>
-                                    </div>
-                                    <div class="star-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="sect-t-star-down-content">
-                                        <p>zdfdf</p>
-                                        <a href="">sdfsdfc</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+        <div class="sect-5-swiper">
+            <div class="container-custom">
+                <div class="sect-5-heading">
+                    <h2>Latest Products</h2>
+                    <div class="sect-5-all-product">
+                        <a href="">View all products &#8594;</a>
                     </div>
-                    <div class="swiper-button-prev prev-btn"></div>
-                    <div class="swiper-button-next next-btn"></div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper  productSwiper">
+                    <div class="swiper-wrapper  ">
+                        <div class="swiper-slide product-silder-imag">
+                            <div class="sect-5-swiper-img">
+                                <div class="img-sect-5">
+                                    <img class="img-1" src="img/p5_large.jpg" alt="">
+                                    <img class="img-2" src="img/p4_large.jpg" alt="">
+                                </div>
+
+                                <div class="sect-5-content">
+                                    <div class="sect-5-icons">
+                                        <i class="fa-regular fa-heart cart-disables" onclick="add('drou')">
+                                            <span class="tooltip-heart ">soldout</span>
+                                        </i>
+                                        <i class="fa-solid fa-bag-shopping">
+                                            <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                        </i>
+                                        <i class="fa-solid fa-signal">
+                                            <span class="tooltip-signal">compare</span>
+                                        </i>
+                                    </div>
+                                    <div class="star-icons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="sect-t-star-down-content">
+                                        <p>Drou watch ultra</p>
+                                        <div class="sect-5-praice-tag">
+                                            <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                            <span class="offer-praice">70.00</span>
+                                            <span class="real-praice"><del>85.00</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide product-silder-imag">
+                            <div class="sect-5-swiper-img">
+                                <div class="img-sect-5">
+                                    <img class="img-2" src="img/p5_large.jpg" alt="">
+                                    <img class="img-1" src="img/13_300x300.jpg" alt="">
+                                </div>
+                                <div class="sect-5-content">
+                                    <div class="sect-5-icons">
+                                        <i class="fa-regular fa-heart cart-enable"  onclick="add('UPad')">
+                                            <span class="tooltip-heart">Add to cart</span>
+                                        </i>
+                                        <i class="fa-solid fa-bag-shopping">
+                                            <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                        </i>
+                                        <i class="fa-solid fa-signal">
+                                            <span class="tooltip-signal">compare</span>
+                                        </i>
+                                    </div>
+                                    <div class="star-icons">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="sect-t-star-down-content">
+                                        <p class="product-name">UPad Pro black color</p>
+                                        <div class="sect-5-praice-tag">
+                                            <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                            <span class="offer-praice">70.00</span>
+                                            <span class="real-praice"><del>85.00</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide product-silder-imag">
+                            <div class="sect-5-swiper-img">
+                                <div class="img-sect-5">
+                                    <img class="img-2" src="img/9_300x300.jpg" alt="">
+                                    <img class="img-1"
+                                        src="img/p2_ea1ad2a2-ba0d-4dd2-b29a-e51fd931583b_800X800_crop_center.jpg"
+                                        alt="">
+                                </div>
+
+                                <div class="sect-5-content">
+                                    <div class="sect-5-icons">
+                                        <i class="fa-regular fa-heart cart-enable"  onclick="add('uphone')">
+                                            <span class="tooltip-heart">Add to cart</span>
+                                        </i>
+                                        <i class="fa-solid fa-bag-shopping">
+                                            <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                        </i>
+                                        <i class="fa-solid fa-signal">
+                                            <span class="tooltip-signal">compare</span>
+                                        </i>
+                                    </div>
+                                    <div class="star-icons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="sect-t-star-down-content">
+                                        <p>Uphone lightning cable</p>
+                                        <div class="sect-5-praice-tag">
+                                            <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                            <span class="offer-praice">80.00</span>
+                                            <span class="real-praice"><del></del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide product-silder-imag">
+                            <div class="sect-5-swiper-img">
+                                <div class="img-sect-5">
+                                    <img class="img-2" src="img/p3_0dd10fdb-44b3-415b-b7c3-91896ecb3ee2_large.jpg"
+                                        alt="">
+                                    <img class="img-1" src="img/11_300x300.jpg" alt="">
+                                </div>
+
+                                <div class="sect-5-content">
+                                    <div class="sect-5-icons">
+                                        <i class="fa-regular fa-heart"  onclick="add('homepod')">
+                                            <span class="tooltip-heart cart-enable">Add to cart</span>
+                                        </i>
+                                        <i class="fa-solid fa-bag-shopping">
+                                            <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                        </i>
+                                        <i class="fa-solid fa-signal">
+                                            <span class="tooltip-signal">compare</span>
+                                        </i>
+                                    </div>
+                                    <div class="star-icons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="sect-t-star-down-content">
+                                        <p>Homepod mini 2022</p>
+                                        <div class="sect-5-praice-tag">
+                                            <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                            <span class="offer-praice">39.00</span>
+                                            <span class="real-praice"><del>60.00</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide product-silder-imag">
+                            <div class="sect-5-swiper-img">
+                                <div class="img-sect-5">
+                                    <img class="img-2" src="img/p5_020e3c58-9f57-4388-b8d8-bb40db3b4c5e_large.jpg"
+                                        alt="">
+                                    <img class="img-1" src="img/p10_220x240_crop_center.jpg" alt="">
+                                </div>
+
+                                <div class="sect-5-content">
+                                    <div class="sect-5-icons">
+                                        <i class="fa-regular fa-heart cart-enable"  onclick="add('iphone 14 ')">
+                                            <span class="tooltip-heart">Add to cart</span>
+                                        </i>
+                                        <i class="fa-solid fa-bag-shopping">
+                                            <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                        </i>
+                                        <i class="fa-solid fa-signal">
+                                            <span class="tooltip-signal">compare</span>
+                                        </i>
+                                    </div>
+                                    <div class="star-icons">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="sect-t-star-down-content">
+                                        <p>lPhone 14 pro max</p>
+                                        <div class="sect-5-praice-tag">
+                                            <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                            <span class="offer-praice">55.00</span>
+                                            <span class="real-praice"><del>75.00</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide product-silder-imag">
+                            <div class="sect-5-swiper-img">
+                                <div class="img-sect-5">
+                                    <img class="img-2" src="img/p7_300x300.jpg" alt="">
+                                    <img class="img-1" src="img/p9_220x240_crop_center.jpg" alt="">
+                                </div>
+
+                                <div class="sect-5-content">
+                                    <div class="sect-5-icons">
+                                        <i class="fa-regular fa-heart cart-enable"  onclick="add('droupods')">
+                                            <span class="tooltip-heart">Add to cart</span>
+                                        </i>
+                                        <i class="fa-solid fa-bag-shopping">
+                                            <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                        </i>
+                                        <i class="fa-solid fa-signal">
+                                            <span class="tooltip-signal">compare</span>
+                                        </i>
+                                    </div>
+                                    <div class="star-icons">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="sect-t-star-down-content">
+                                        <p>DrouPods max</p>
+                                        <div class="sect-5-praice-tag">
+                                            <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                            <span class="offer-praice">79.00</span>
+                                            <span class="real-praice"><del></del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide product-silder-imag">
+                            <div class="sect-5-swiper-img">
+                                <div class="img-sect-5">
+                                    <img class="img-2" src="img/13_220x240_crop_center.jpg" alt="">
+                                    <img class="img-1" src="img/p4_220x240_crop_center.jpg" alt="">
+                                </div>
+
+                                <div class="sect-5-content">
+                                    <div class="sect-5-icons">
+                                        <i class="fa-regular fa-heart cart-enable"  onclick="add('drodafe')">
+                                            <span class="tooltip-heart">Add to cart</span>
+                                        </i>
+                                        <i class="fa-solid fa-bag-shopping">
+                                            <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                        </i>
+                                        <i class="fa-solid fa-signal">
+                                            <span class="tooltip-signal">compare</span>
+                                        </i>
+                                    </div>
+                                    <div class="star-icons">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="sect-t-star-down-content">
+                                        <p>DroSafe Charger</p>
+                                        <div class="sect-5-praice-tag">
+                                            <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                            <span class="offer-praice">39.00</span>
+                                            <span class="real-praice"><del></del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-
-            <div class="main"></div>
-
-
+            <div class="swiper-button-prev prev-btn"></div>
+            <div class="swiper-button-next next-btn"></div>
         </div>
     </section>
+
+    <!-- /* ================= section5 =============== */ -->
+    <!-- /* ================= section5 =============== */ -->
+    <!-- /* ================= section5 =============== */ -->
+
+
+    <section class="special-product">
+        <div class="custom-container">
+            <div class="special-product-bg">
+                <div class="countdown">
+                    <div class="count-text">
+                        <h5>Hurry Up !</h5>
+                        <h4>Up To 25% Discount</h4>
+                        <h6>Check it Out</h6>
+                    </div>
+                    <div class="countdown-btn">
+                        <div class="special-product-countdown">
+                            <div class="product-countdown data-countdown=2023/12/30">
+                                <div class="single-countdown"><span class="single-countdown-time">02</span><span
+                                        class="single-countdown-text">DAYS</span></div>
+                                <div class="single-countdown"><span class="single-countdown-time">12</span><span
+                                        class="single-countdown-text">HRS</span></div>
+                                <div class="single-countdown"><span class="single-countdown-time">30</span><span
+                                        class="single-countdown-text">MINS</span></div>
+                                <div class="single-countdown"><span class="single-countdown-time">30</span><span
+                                        class="single-countdown-text">SECS</span></div>
+                            </div>
+                        </div>
+                        <a href="" class="button-2">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- =============== section 6 ============== -->
+    <!-- =============== section 6 ============== -->
+    <!-- =============== section 6 ============== -->
+
+    <section>
+        <div class="main-bg6">
+            <div class="container">
+                <div class="popular-product-join">
+                    <div class="popular-heading">
+                        <h2>Popular Products</h2>
+                        <div class="popular-child">
+                            <a class="popular-first-child" href="">Accessories</a>
+                            <a class="popular-second-child" href="">iPhone</a>
+                            <a class="popular-third-child" href="">Laptop</a>
+                        </div>
+                    </div>
+                    <div class="popular-products">
+
+
+                        <div class="sect-6-swiper-img">
+                            <div class="img-sect-6">
+                                <img class="img-1" src="img/p5_large.jpg" alt="">
+                                <img class="img-2" src="img/p4_large.jpg" alt="">
+                            </div>
+
+                            <div class="sect-6-content">
+                                <div class="sect-6-icons">
+                                    <i class="fa-regular fa-heart cart-disables">
+                                        <span class="tooltip-heart ">soldout</span>
+                                    </i>
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-signal">
+                                        <span class="tooltip-signal">compare</span>
+                                    </i>
+                                </div>
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="sect-t-star-down-content">
+                                    <p>Drou watch ultra</p>
+                                    <div class="sect-6-praice-tag">
+                                        <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                        <span class="offer-praice">70.00</span>
+                                        <span class="real-praice"><del>85.00</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="sect-6-swiper-img">
+                            <div class="img-sect-6">
+                                <img class="img-1" src="./img/p7_large.jpg" alt="">
+                                <img class="img-2" src="./img/p6_large.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="sect-6-content">
+                                <div class="sect-6-icons">
+                                    <i class="fa-regular fa-heart cart-disables">
+                                        <span class="tooltip-heart ">soldout</span>
+                                    </i>
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-signal">
+                                        <span class="tooltip-signal">compare</span>
+                                    </i>
+                                </div>
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="sect-t-star-down-content">
+                                    <p>DrouSafe Charger</p>
+                                    <div class="sect-6-praice-tag">
+                                        <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                        <span class="offer-praice">55.00</span>
+                                        <span class="real-praice"><del>75.00</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="sect-6-swiper-img">
+                            <div class="img-sect-6">
+                                <img class="img-1" src="./img/13_large.jpg" alt="">
+                                <img class="img-2" src="./img/p4_b019dfc8-3740-44ac-8916-6db66a336feb_large.jpg" alt="">
+                            </div>
+
+                            <div class="sect-6-content">
+                                <div class="sect-6-icons">
+                                    <i class="fa-regular fa-heart cart-disables">
+                                        <span class="tooltip-heart ">soldout</span>
+                                    </i>
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-signal">
+                                        <span class="tooltip-signal">compare</span>
+                                    </i>
+                                </div>
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="sect-t-star-down-content">
+                                    <p>Drou watch ultra</p>
+                                    <div class="sect-6-praice-tag">
+                                        <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                        <span class="offer-praice">70.00</span>
+                                        <span class="real-praice"><del>85.00</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="sect-6-swiper-img">
+                            <div class="img-sect-6">
+                                <img class="img-1" src="./img/12_large.jpg" alt="">
+                                <img class="img-2" src="./img//p10_78f5d5ed-818a-4a91-88a1-433a7f408c84_large.jp"
+                                    alt="">
+                            </div>
+
+                            <div class="sect-6-content">
+                                <div class="sect-6-icons">
+                                    <i class="fa-regular fa-heart cart-disables">
+                                        <span class="tooltip-heart ">soldout</span>
+                                    </i>
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-signal">
+                                        <span class="tooltip-signal">compare</span>
+                                    </i>
+                                </div>
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="sect-t-star-down-content">
+                                    <p>DrouPods max</p>
+                                    <div class="sect-6-praice-tag">
+                                        <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                        <span class="offer-praice">55.00</span>
+                                        <span class="real-praice"><del>75.00</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="sect-6-swiper-img">
+                            <div class="img-sect-6">
+                                <img class="img-1" src="./img/p8_523c97c7-2aa2-47e8-8b17-5a3c05a66db3_large.jpg" alt="">
+                                <img class="img-2" src="./img/p7_36d931d4-1ef2-4c82-9a65-80426fb77f21_large.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="sect-6-content">
+                                <div class="sect-6-icons">
+                                    <i class="fa-regular fa-heart cart-disables">
+                                        <span class="tooltip-heart ">soldout</span>
+                                    </i>
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-signal">
+                                        <span class="tooltip-signal">compare</span>
+                                    </i>
+                                </div>
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="sect-t-star-down-content">
+                                    <p>IPhone 14 pro max</p>
+                                    <div class="sect-6-praice-tag">
+                                        <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                        <span class="offer-praice">999.00</span>
+                                        <span class="real-praice"><del></del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="sect-6-swiper-img">
+                            <div class="img-sect-6">
+                                <img class="img-1" src="./img/p7_large.jpg" alt="">
+                                <img class="img-2" src="./img/p6_large.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="sect-6-content">
+                                <div class="sect-6-icons">
+                                    <i class="fa-regular fa-heart cart-disables">
+                                        <span class="tooltip-heart ">soldout</span>
+                                    </i>
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-signal">
+                                        <span class="tooltip-signal">compare</span>
+                                    </i>
+                                </div>
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="sect-t-star-down-content">
+                                    <p>DrouSafe Charger</p>
+                                    <div class="sect-6-praice-tag">
+                                        <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                        <span class="offer-praice">55.00</span>
+                                        <span class="real-praice"><del>75.00</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="sect-6-swiper-img">
+                            <div class="img-sect-6">
+                                <img class="img-1" src="./img/p1_large.jpg" alt="">
+                                <img class="img-2" src="./img/p2_large.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="sect-6-content">
+                                <div class="sect-6-icons">
+                                    <i class="fa-regular fa-heart cart-disables">
+                                        <span class="tooltip-heart ">soldout</span>
+                                    </i>
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-signal">
+                                        <span class="tooltip-signal">compare</span>
+                                    </i>
+                                </div>
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="sect-t-star-down-content">
+                                    <p>Drou watch ultra</p>
+                                    <div class="sect-6-praice-tag">
+                                        <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                        <span class="offer-praice">70.00</span>
+                                        <span class="real-praice"><del>85.00</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="sect-6-swiper-img">
+                            <div class="img-sect-6">
+                                <img class="img-1" src="img/p5_large.jpg" alt="">
+                                <img class="img-2" src="img/p4_large.jpg" alt="">
+                            </div>
+
+                            <div class="sect-6-content">
+                                <div class="sect-6-icons">
+                                    <i class="fa-regular fa-heart cart-disables">
+                                        <span class="tooltip-heart ">soldout</span>
+                                    </i>
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span class="tooltip-bag-shopping">Add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-signal">
+                                        <span class="tooltip-signal">compare</span>
+                                    </i>
+                                </div>
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="sect-t-star-down-content">
+                                    <p>Drou watch ultra</p>
+                                    <div class="sect-6-praice-tag">
+                                        <i id="currency-praice" class="fa-solid fa-dollar-sign"></i>
+                                        <span class="offer-praice">70.00</span>
+                                        <span class="real-praice"><del>85.00</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!------- SECTION 10 ------->
+    <!------- SECTION 10 ------->
+
+    <section class="discount-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="discount-wrap">
+                        <div class="discount-img-zoom">
+                            <a href=""><img src="./img/slide61.webp" alt="1270px"></a>
+                        </div>
+                        <div class="banner-discount-text">
+                            <span>BIG DISCOUNT</span>
+                            <h2>Google Pixel Smart Phone</h2>
+                            <h3>$350.00</h3>
+                            <div class="banner-discount-btn">
+                                <a href="">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------- SECTION 11 ------->
+    <!------- SECTION 11 ------->
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="bg-gray-2">
+                <div class="free-delivery">
+                    <div class="free-delivery-template">
+                        <div class="checkouts">
+                            <div class="feature-list-icon">
+                                <img src="./img/i2-2_medium_e2b39cba-8c39-4a2d-81c7-8e8688d8c9b5.png" alt="">
+                            </div>
+                            <h4>Free delivery</h4>
+                            <p>And free returns. See checkout for <br>
+                                delivery dates.</p>
+                        </div>
+                    </div>
+                    <div class="free-delivery-template">
+                        <div class="checkouts">
+                            <div class="feature-list-icon">
+                                <img src="./img/i2_medium_ded55818-afbc-49a9-816a-72379db6213c.png" alt="">
+                            </div>
+                            <h4>Pay monthly at 0% APR</h4>
+                            <p>Choose to check out with Apple Card <br>
+                                Monthly Installments.</p>
+                        </div>
+                    </div>
+                    <div class="free-delivery-template">
+                        <div class="checkouts">
+                            <div class="feature-list-icon">
+                                <img src="./img/gmm_medium_9c0bfab9-b0f5-46ba-ae91-e04fe3803037.png" alt="">
+                            </div>
+                            <h4>Personalize it</h4>
+                            <p>Engrave your device with your name or a <br>
+                                personal note</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------- SECTION 12 ------->
+    <!------- SECTION 12 ------->
+
+    <section class="section-footer">
+        <div class="container">
+            <div class="footer-area">
+                <div class="footer-row">
+                    <div class="customer-service-column">
+                        <div class="footer-content">
+                            <h3 class="footer-title">Contact Us</h3>
+                            <div class="footer-info">
+                                <ul class="footer-block-details">
+                                    <li> <span>Drou Demo Store <br>
+                                            No. 1259 Freedom, New York <br>
+                                            United States</span> </li>
+                                    <li> <span>+91-987654321</span> </li>
+                                    <li> <span>demo@exampledemo.com</span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-service-column-1">
+                        <div class="footer-content">
+                            <h3 class="footer-title">Information</h3>
+                            <div class="footer-info-list">
+                                <ul>
+                                    <li> <a href="">Product Support</a> </li>
+                                    <li> <a href="">Checkout</a> </li>
+                                    <li> <a href="">License Policy</a> </li>
+                                    <li> <a href="">Affiliate</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-service-column-1">
+                        <div class="footer-content">
+                            <h3 class="footer-title">Customer Service</h3>
+                            <div class="footer-info-list">
+                                <ul>
+                                    <li> <a href="">Help Center</a> </li>
+                                    <li> <a href="">Redeem Voucher</a> </li>
+                                    <li> <a href="">Contact Us</a> </li>
+                                    <li> <a href="">Policies & Rules</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-service-column-2">
+                        <div class="footer-content">
+                            <h3 class="footer-title">Download Our App</h3>
+                            <div class="first-order">
+                                <p>Download our App and get extra 15% Discount on your first Order..!</p>
+                                <div class="google-app-img">
+                                    <a href=""><img src="img/app-store.jpg" alt=""></a>
+                                    <a href=""><img src="img/google-play.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------- SECTION 13 ------->
+    <!------- SECTION 13 ------->
+
+    <div id="section-footer-copyright-area">
+        <footer class="footer-copyright-area">
+            <div class="container">
+                <div class="footer-row-2"></div>
+                <div class="foot-copy-text">
+                    <p>Copyright © Team90Degree | Built with Drou by Team90Degree.</p>
+                </div>
+                <div class="foot-copy-text-1">
+                    <div class="payment-img">
+                        <a href=""> <img src="img/payment-method.png" alt=""> </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    </div>
 
 
 
@@ -764,13 +1175,18 @@
     <!-- ================== ICONS LINK ================= -->
     <script src="https://kit.fontawesome.com/7e069105ea.js" crossorigin="anonymous"></script>
 
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- GSAP CDN LINK  -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
-        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+    <script src="./js/gsap.min.js"></script>
+
+
+    <!-- GSAP SCROLL CDN LINK  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- ===================== JS FILE LINK =======================  -->

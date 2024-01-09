@@ -1,0 +1,145 @@
+
+  /* --------------------SECTION 2--------------------------- */
+  /* --------------------SECTION 2--------------------------- */
+  /* --------------------SECTION 2--------------------------- */
+
+  .login-main{
+    background-color: #f4f4f4;
+    padding: 50px;
+  }
+
+  .login-para{
+    display: flex;
+  }
+
+  .login-para a{
+    text-decoration: none;
+    color: #666;
+    padding-right: 10px;
+  }
+
+ 
+  .acocount-page{
+    color: #e52e06;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+
+  /* --------------------SECTION 3--------------------------- */
+  /* --------------------SECTION 3--------------------------- */
+  /* --------------------SECTION 3--------------------------- */
+
+  .main-form{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+ .login-form{
+    text-align: center;
+    padding: 30px 30px 20px;
+ 
+    box-shadow: 2px 2px 11px #0000001a;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+ .login-content h3{
+    color: #323232;
+    font-size: 28px;    
+    padding-bottom: 30px;
+  }
+  
+  .login-content p{
+    color: #666;
+    padding-bottom: 30px;
+  }
+
+  .row{
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .row-content{
+    display: flex;
+    /* gap: 60px; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .row-content label{
+    padding: 10px 0px;
+    width: 130px;
+    text-align: left;
+  }
+  .row-content input{
+    border: 1px solid #ebebeb;
+    background-color: #ebebeb;
+    width: 45%;
+    height: 35px;
+    padding: 0 14px
+  }
+
+ 
+  .forgot a{
+    text-decoration: none;
+    color: #666;
+   
+  }
+
+  .login-button{
+    padding-top: 40px;
+    padding-bottom: 40px;  
+  }
+  .login-button a{
+    text-decoration: none;
+    color: white;
+    background-color: #e52e06;
+    border: 1px solild;
+    border-radius: 30px;
+    padding: 15px 25px;
+ }
+ .login-button a:hover{
+    background-color: black;
+ }
+  .login-button a::after {
+    content: "";
+    height: 1px;
+    width: 42%;
+    background-color: #ebebeb;
+    position: absolute;
+    transform: translate(-55%,50px);
+}
+
+.create{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.create a{
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+}
+.create a:hover{
+    color: #e52e06;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-footer {
+    background-color: #f8f8f8 !important;
+  }

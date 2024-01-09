@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <title>Drou - Electronics Store Myshopify</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/signup-style.css">
+</head>
+
+<body onload="move()">
+
+
+    <!-- ================= PAGE LOADER ANIMATION START ================== -->
+    <div id="preload">
+        <div class="load-dost">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+        </div>
+    </div>
+
+    <!-- ================= PAGE LOADER ANIMATION END ================== -->
+
+
+
+    <section class="header-1-line">
+        <div class="container">
+            <div class="header-1">
+                <div class="contact">
+                    <ul>
+                        <li>(08)123 456 7890</li>
+                        <span class="header-1-line-vartical"></span>
+                        <li><a href=""> Store location</a></li>
+                    </ul>
+                </div>
+                <div class="offer">
+                    <p>Tell a friend about Drou & get 20% off*</p>
+                </div>
+                <div class="login">
+                    <ul>
+                        <li class="currency-sect-button currency"><span id="currency-change">USD</span> <i
+                                class="fa-solid fa-angle-down"></i>
+
+                            <div class="currency-drop">
+                                <ul class="currency-list">
+                                    <li onclick="showDetails(this)" class="USD" data-currency-type="USD">USD - US Dollar
+                                    </li>
+                                    <li onclick="showDetails(this)" class="EUR" data-currency-type="EUR">EUR - Euro</li>
+                                    <li onclick="showDetails(this)" class="GBP" data-currency-type="GBP">GBP - British
+                                        Pound</li>
+                                    <li onclick="showDetails(this)" class="INR" data-currency-type="INR">INR - Indian
+                                        Rupee</li>
+                                    <li onclick="showDetails(this)" class="BDT" data-currency-type="BDT">BDT -
+                                        Bangladesh Taka</li>
+                                    <li onclick="showDetails(this)" class="JPY" data-currency-type="JPY">JPY - Japan Yen
+                                    </li>
+                                    <li onclick="showDetails(this)" class="CAD" data-currency-type="CAD">CAD - Canada
+                                        Dollar</li>
+                                    <li onclick="showDetails(this)" class="AUD" data-currency-type="AUD">AUD -
+                                        Australian Dollar</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <span class="header-1-line-vartical"></span>
+                        <li class="login"> <a href="./log.html">Log In</a></li>
+                        <div class="log-line">/</div>
+                        <li class="sign"><a href="./signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /* ================= section2 =============== */ -->
+    <!-- /* ================= section2 =============== */ -->
+    <!-- /* ================= section2 =============== */ -->
+    <section class="nav-srction">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="">
+                        <img src="img/logo_300x300.png" alt="">
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul class="nav-list">
+                        <li class=" nav-item-tag"><a href=""><span>home</span></i></a></li>
+                        <li class="drop-down nav-item-tag"><a href=""><span>Electronics</span> <i
+                                    class="fa-solid fa-angle-down"></i></a>
+                            <div class="drop">
+                                <div class="cat">
+                                    <div class="cat-heading">
+                                        <h3>Smart Phone</h3>
+                                    </div>
+                                    <ul class="drop-list">
+                                        <li><a href="">Direct TV</a></li>
+                                        <li><a href=""> LCD Screen</a></li>
+                                        <li><a href="">LED Screen</a></li>
+                                        <li><a href="">Smart watch</a></li>
+                                        <li><a href="">Airpods proSALE</a></li>
+                                        <li><a href="">Computer</a></li>
+                                        <li><a href="">Headsets</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cat">
+                                    <div class="cat-heading">
+                                        <h3>Headphones</h3>
+                                    </div>
+                                    <ul class="drop-list">
+                                        <li><a href="">Android</a></li>
+                                        <li><a href="">AirpodsNEW</a></li>
+                                        <li><a href="">iPhone</a></li>
+                                        <li><a href="">Windows phones</a></li>
+                                        <li><a href="">Apple phone</a></li>
+                                        <li><a href="">Logitech</a></li>
+                                        <li><a href="">Nokia phone</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cat">
+                                    <div class="cat-heading">
+                                        <h3>Apple MacBook</h3>
+                                    </div>
+                                    <ul class="drop-list">
+                                        <li><a href="">Laptop</a></li>
+                                        <li><a href="">Convertible</a></li>
+                                        <li><a href="">Wired Earbuds</a></li>
+                                        <li><a href=""> Mac book Pro</a></li>
+                                        <li><a href="">Ear Buds</a></li>
+                                        <li><a href="">Speaker</a></li>
+                                        <li><a href="">Home security</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cat">
+                                    <div class="cat-heading">
+                                        <h3>Best Selling</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class=" nav-item-tag"><a href=""><span>blogs</span> <i
+                                    class="fa-solid fa-angle-down"></i></a></li>
+                        <li class=" nav-item-tag"><a href=""><span>pages</span> <i
+                                    class="fa-solid fa-angle-down"></i></a></li>
+                        <li class=" nav-item-tag"><a href=""><span>contact</span> </a></li>
+                    </ul>
+                </div>
+                <div class="button-icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping"><span class="count-list">0</span></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- -----------------------SECTION 2----------------------------------------     -->
+    <!-- -----------------------SECTION 2----------------------------------------     -->
+    <!-- -----------------------SECTION 2----------------------------------------     -->
+
+    <section>
+        <div class="login-main">
+            <div class="container">
+                <div class="login-para">
+                    <a href="./index.html">Home</a>
+                    <span>/</span>
+                    <a href="./signup.html">Account</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------SECTION 3----------------------------------------     -->
+    <!-- -----------------------SECTION 3----------------------------------------     -->
+    <!-- -----------------------SECTION 3----------------------------------------     -->
+
+    <section>
+        <div class="signup-main">
+            <div class="container">
+                <div class="signup-form">
+                    <div class="signup-content">
+                        <h2>Create Account</h2>
+                        <p>Please Register using account detail bellow.</p>
+                        <span>Already have an account?
+                            <a href="">Sign In</a>
+                        </span>
+                    </div>
+
+                    <div class="actual">
+                        <div class="actual-create">
+                            <label for="">First Name</label>
+                            <input type="text" name="fname" placeholder="First Name">
+                        </div>
+
+                        <div class="actual-create">
+                            <label for="">Last Name</label>
+                            <input type="text" name="lname" placeholder="Last Name">
+                        </div>
+
+                        <div class="actual-create">
+                            <label for="">Email</label>
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="actual-create">
+                            <label for="">Password</label>
+                            <input type="text" name="pass" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="signup-button">
+                        <a href="">CREATE</a>
+                    </div>
+
+                    <div class="restore-button">
+                        <a href="">Restore to Store</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!------- SECTION 12 ------->
+    <!------- SECTION 12 ------->
+
+    <section class="section-footer">
+        <div class="container">
+            <div class="footer-area">
+                <div class="footer-row">
+                    <div class="customer-service-column">
+                        <div class="footer-content">
+                            <h3 class="footer-title">Contact Us</h3>
+                            <div class="footer-info">
+                                <ul class="footer-block-details">
+                                    <li> <span>Drou Demo Store <br>
+                                            No. 1259 Freedom, New York <br>
+                                            United States</span> </li>
+                                    <li> <span>+91-987654321</span> </li>
+                                    <li> <span>demo@exampledemo.com</span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-service-column-1">
+                        <div class="footer-content">
+                            <h3 class="footer-title">Information</h3>
+                            <div class="footer-info-list">
+                                <ul>
+                                    <li> <a href="">Product Support</a> </li>
+                                    <li> <a href="">Checkout</a> </li>
+                                    <li> <a href="">License Policy</a> </li>
+                                    <li> <a href="">Affiliate</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-service-column-1">
+                        <div class="footer-content">
+                            <h3 class="footer-title">Customer Service</h3>
+                            <div class="footer-info-list">
+                                <ul>
+                                    <li> <a href="">Help Center</a> </li>
+                                    <li> <a href="">Redeem Voucher</a> </li>
+                                    <li> <a href="">Contact Us</a> </li>
+                                    <li> <a href="">Policies & Rules</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-service-column-2">
+                        <div class="footer-content">
+                            <h3 class="footer-title">Download Our App</h3>
+                            <div class="first-order">
+                                <p>Download our App and get extra 15% Discount on your first Order..!</p>
+                                <div class="google-app-img">
+                                    <a href=""><img src="img/app-store.jpg" alt=""></a>
+                                    <a href=""><img src="img/google-play.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------- SECTION 13 ------->
+    <!------- SECTION 13 ------->
+
+    <div id="section-footer-copyright-area">
+        <footer class="footer-copyright-area">
+            <div class="container">
+                <div class="footer-row-2"></div>
+                <div class="foot-copy-text">
+                    <p>Copyright © Team90Degree | Built with Drou by Team90Degree.</p>
+                </div>
+                <div class="foot-copy-text-1">
+                    <div class="payment-img">
+                        <a href=""> <img src="img/payment-method.png" alt=""> </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    </div>
+
+
+
+
+
+
+
+    <!-- ================== ICONS LINK ================= -->
+    <script src="https://kit.fontawesome.com/7e069105ea.js" crossorigin="anonymous"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- GSAP CDN LINK  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- GSAP SCROLL CDN LINK  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ===================== JS FILE LINK =======================  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
